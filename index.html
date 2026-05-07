@@ -926,30 +926,38 @@
 
 <script>
 /* =============================================
-   STORAGE LAYER  (localStorage with in-memory fallback)
+   STORAGE LAYER  (dynamic detection — works on
+   GitHub Pages w/ localStorage and in sandboxed
+   iframes w/ in-memory fallback)
    ============================================= */
 const STORAGE_KEY = 'writing-template-bank-v1';
-let storageOk = true;
 const memoryStore = {};
+let _ls = null;
 
-function tryStorage() {
-  try {
-    const k = '__test__';
-    localStorage.setItem(k, '1');
-    localStorage.removeItem(k);
-    return true;
-  } catch (e) { return false; }
+// Probe localStorage via dynamic access, never crash on sandbox
+try {
+  const w = (typeof window !== 'undefined') ? window : null;
+  if (w) {
+    const ls = w['localStorage'];
+    if (ls && typeof ls.setItem === 'function') {
+      const probe = '__wtb_probe_' + Date.now();
+      ls.setItem(probe, '1');
+      if (ls.getItem(probe) === '1') {
+        ls.removeItem(probe);
+        _ls = ls;
+      }
+    }
+  }
+} catch (e) {
+  _ls = null;
 }
-storageOk = tryStorage();
-if (!storageOk) {
-  document.getElementById('storage-banner').classList.add('show');
-}
+const storageOk = _ls !== null;
 
 function saveData(data) {
   const json = JSON.stringify(data);
-  if (storageOk) {
-    try { localStorage.setItem(STORAGE_KEY, json); }
-    catch (e) { memoryStore[STORAGE_KEY] = json; storageOk = false; document.getElementById('storage-banner').classList.add('show'); }
+  if (_ls) {
+    try { _ls.setItem(STORAGE_KEY, json); }
+    catch (e) { memoryStore[STORAGE_KEY] = json; }
   } else {
     memoryStore[STORAGE_KEY] = json;
   }
@@ -958,12 +966,22 @@ function saveData(data) {
 
 function loadData() {
   let json = null;
-  if (storageOk) {
-    try { json = localStorage.getItem(STORAGE_KEY); } catch (e) { json = null; }
+  if (_ls) {
+    try { json = _ls.getItem(STORAGE_KEY); } catch (e) { json = null; }
   }
   if (!json) json = memoryStore[STORAGE_KEY] || null;
   if (!json) return null;
   try { return JSON.parse(json); } catch (e) { return null; }
+}
+
+// Show banner after DOM is ready (deferred so init doesn't fail)
+if (!storageOk) {
+  setTimeout(() => {
+    try {
+      const banner = document.getElementById('storage-banner');
+      if (banner) banner.classList.add('show');
+    } catch (e) {}
+  }, 0);
 }
 
 function updateLastSaved() {
