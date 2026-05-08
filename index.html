@@ -1002,6 +1002,8 @@ function updateLastSaved() {
   if (el) el.textContent = '最後更新 · ' + new Date().toLocaleString('zh-TW');
 }
 
+function uid() { return 'id_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36); }
+
 /* =============================================
    SEED DATA  (only used when bank is empty)
    ============================================= */
@@ -1033,7 +1035,7 @@ let state = loadData() || SEED;
 // Ensure all required arrays exist (in case of partial data)
 ['translations','essays','chinese'].forEach(k => { if (!state[k]) state[k] = []; });
 
-function uid() { return 'id_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36); }
+function uid_unused_legacy() { return ''; } // (uid moved above SEED to fix init order)
 function persist() { saveData(state); refreshCounts(); }
 
 function refreshCounts() {
@@ -1043,11 +1045,6 @@ function refreshCounts() {
 }
 refreshCounts();
 updateLastSaved();
-
-// Today date in elegant format
-const d = new Date();
-const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-document.getElementById('today-date').textContent = `${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
 
 /* =============================================
    FILTERS  (per-bank state)
