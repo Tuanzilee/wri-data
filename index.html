@@ -723,6 +723,42 @@
     .session-stats { flex-direction: column; }
     .modal-head, .modal-body, .modal-foot { padding-left: 18px; padding-right: 18px; }
   }
+
+  /* ============ SYNC ============ */
+  .sync-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    display: inline-block; margin-right: 2px;
+    transition: background .3s;
+  }
+  .sync-dot.idle    { background: var(--diff-A); }
+  .sync-dot.syncing { background: #F59E0B; }
+  .sync-dot.error   { background: #EF4444; }
+  .sync-dot.off     { background: var(--border-strong); }
+  .sync-status-btn {
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 0 10px; height: 32px; border-radius: var(--r);
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.06em; text-transform: uppercase;
+    color: var(--fg-3); border: 1px solid var(--border);
+    background: var(--surface); cursor: pointer;
+    transition: all .15s var(--easing);
+  }
+  .sync-status-btn:hover { border-color: var(--border-strong); color: var(--fg); }
+  .sync-setup-note {
+    font-size: 0.8rem; color: var(--fg-3); line-height: 1.6;
+    background: var(--bg-2); border-radius: var(--r);
+    padding: 12px 14px; margin-bottom: 16px;
+  }
+  .sync-setup-note ol { margin: 6px 0 0 16px; padding: 0; }
+  .sync-setup-note li { margin-bottom: 4px; }
+  .sync-setup-note a { color: var(--fg-2); }
+  .sync-gist-id-display {
+    font-family: var(--mono); font-size: 0.78rem;
+    background: var(--bg-2); border: 1px solid var(--border);
+    border-radius: var(--r); padding: 8px 12px;
+    word-break: break-all; color: var(--fg-2);
+    margin-top: 6px; cursor: pointer;
+  }
 </style>
 </head>
 <body>
@@ -737,6 +773,10 @@
       <div class="sub">翻譯句型、英文作文模板、國文素材 — 一處集結,日積月累。</div>
     </div>
     <div class="meta-actions">
+      <button class="sync-status-btn" id="btn-sync-settings" title="雲端同步設定">
+        <span class="sync-dot off" id="sync-dot"></span>
+        <span id="sync-label">同步</span>
+      </button>
       <button class="icon-btn" id="btn-export" title="匯出 JSON 備份">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14"/></svg>
       </button>
@@ -920,6 +960,44 @@
     <div class="modal-foot">
       <button class="btn btn-ghost" id="modal-cancel">取消</button>
       <button class="btn btn-primary" id="modal-save">儲存</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SYNC MODAL ============ -->
+<div class="modal-overlay" id="sync-modal-overlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h2>雲端同步設定</h2>
+      <button class="icon-btn" id="sync-modal-close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="sync-setup-note">
+        <strong>使用 GitHub Gist 跨裝置同步</strong>
+        <ol>
+          <li>前往 <a href="https://github.com/settings/tokens/new" target="_blank">github.com → Settings → Developer settings → Personal access tokens</a></li>
+          <li>建立新 Token，只勾選 <strong>gist</strong> 權限</li>
+          <li>複製 Token 貼入下方，點「儲存並同步」</li>
+          <li>第二台裝置：填入同一組 Token + Gist ID 即可</li>
+        </ol>
+      </div>
+      <div class="field">
+        <label>GitHub Personal Access Token</label>
+        <input id="sync-token-input" type="password" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+      </div>
+      <div class="field">
+        <label>Gist ID（第一次留空，之後複製填入其他裝置）</label>
+        <input id="sync-gist-input" type="text" placeholder="第一次同步後自動產生">
+        <div id="sync-gist-display" class="sync-gist-id-display" style="display:none" title="點擊複製"></div>
+      </div>
+      <div id="sync-msg" style="font-size:0.82rem;color:var(--fg-3);margin-top:8px;min-height:20px;"></div>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" id="sync-modal-cancel">取消</button>
+      <button class="btn btn-ghost" id="sync-pull-btn">從雲端拉取</button>
+      <button class="btn btn-primary" id="sync-save-btn">儲存並同步</button>
     </div>
   </div>
 </div>
@@ -1617,6 +1695,165 @@ function endPractice() {
     resetPracticeUI();
   }
 }
+
+/* =============================================
+   GITHUB GIST SYNC
+   ============================================= */
+const SYNC_TOKEN_LS = 'wtb-gh-token';
+const SYNC_GIST_LS  = 'wtb-gh-gist-id';
+
+let syncToken  = '';
+let syncGistId = '';
+let syncDebounceTimer = null;
+
+try { syncToken  = localStorage.getItem(SYNC_TOKEN_LS)  || ''; } catch(e){}
+try { syncGistId = localStorage.getItem(SYNC_GIST_LS)   || ''; } catch(e){}
+
+function setSyncDot(state) {
+  const dot   = document.getElementById('sync-dot');
+  const label = document.getElementById('sync-label');
+  if (!dot) return;
+  dot.className = 'sync-dot ' + state;
+  const labels = { idle:'已同步', syncing:'同步中', error:'同步失敗', off:'同步' };
+  if (label) label.textContent = labels[state] || '同步';
+}
+
+async function pushToGist() {
+  if (!syncToken) return;
+  setSyncDot('syncing');
+  try {
+    const content = JSON.stringify({ version:'1.0', exportedAt: new Date().toISOString(), ...state }, null, 2);
+    const body = JSON.stringify({ description:'Writing Template Bank', public: false, files:{ 'writing-bank.json':{ content } } });
+    let res;
+    if (!syncGistId) {
+      res = await fetch('https://api.github.com/gists', { method:'POST', headers:{ 'Authorization':'token '+syncToken, 'Content-Type':'application/json' }, body });
+      const gist = await res.json();
+      if (!gist.id) throw new Error(gist.message || 'create failed');
+      syncGistId = gist.id;
+      try { localStorage.setItem(SYNC_GIST_LS, syncGistId); } catch(e){}
+      updateGistDisplay();
+    } else {
+      res = await fetch('https://api.github.com/gists/'+syncGistId, { method:'PATCH', headers:{ 'Authorization':'token '+syncToken, 'Content-Type':'application/json' }, body });
+      if (!res.ok) throw new Error('push failed ' + res.status);
+    }
+    setSyncDot('idle');
+  } catch(e) {
+    setSyncDot('error');
+    console.warn('Gist push failed', e);
+  }
+}
+
+async function pullFromGist() {
+  if (!syncToken || !syncGistId) return null;
+  setSyncDot('syncing');
+  try {
+    const res = await fetch('https://api.github.com/gists/'+syncGistId, { headers:{ 'Authorization':'token '+syncToken } });
+    if (!res.ok) throw new Error('pull failed ' + res.status);
+    const gist = await res.json();
+    const file = gist.files && gist.files['writing-bank.json'];
+    if (!file) throw new Error('file not found in gist');
+    const data = JSON.parse(file.content);
+    setSyncDot('idle');
+    return data;
+  } catch(e) {
+    setSyncDot('error');
+    console.warn('Gist pull failed', e);
+    return null;
+  }
+}
+
+function debouncedPush() {
+  if (!syncToken) return;
+  clearTimeout(syncDebounceTimer);
+  syncDebounceTimer = setTimeout(pushToGist, 2000);
+}
+
+// Patch persist to also push
+const _originalPersist = persist;
+function persist() {
+  saveData(state);
+  refreshCounts();
+  debouncedPush();
+}
+
+function updateGistDisplay() {
+  const disp = document.getElementById('sync-gist-display');
+  const inp  = document.getElementById('sync-gist-input');
+  if (!disp || !inp) return;
+  if (syncGistId) {
+    disp.style.display = 'block';
+    disp.textContent = syncGistId;
+    inp.value = syncGistId;
+    disp.onclick = () => { navigator.clipboard?.writeText(syncGistId).catch(()=>{}); disp.textContent = '已複製 ✓'; setTimeout(()=>{ disp.textContent = syncGistId; }, 1500); };
+  } else {
+    disp.style.display = 'none';
+  }
+}
+
+// Sync modal
+const syncOverlay = document.getElementById('sync-modal-overlay');
+document.getElementById('btn-sync-settings').addEventListener('click', () => {
+  document.getElementById('sync-token-input').value = syncToken;
+  document.getElementById('sync-gist-input').value  = syncGistId;
+  document.getElementById('sync-msg').textContent = '';
+  updateGistDisplay();
+  syncOverlay.classList.add('show');
+});
+document.getElementById('sync-modal-close').addEventListener('click',  () => syncOverlay.classList.remove('show'));
+document.getElementById('sync-modal-cancel').addEventListener('click', () => syncOverlay.classList.remove('show'));
+syncOverlay.addEventListener('click', e => { if (e.target === syncOverlay) syncOverlay.classList.remove('show'); });
+
+document.getElementById('sync-save-btn').addEventListener('click', async () => {
+  const token  = document.getElementById('sync-token-input').value.trim();
+  const gistId = document.getElementById('sync-gist-input').value.trim();
+  const msg    = document.getElementById('sync-msg');
+  if (!token) { msg.textContent = '請填入 Token'; return; }
+  syncToken  = token;
+  syncGistId = gistId;
+  try { localStorage.setItem(SYNC_TOKEN_LS, token); } catch(e){}
+  try { if (gistId) localStorage.setItem(SYNC_GIST_LS, gistId); } catch(e){}
+  msg.textContent = '同步中...';
+  await pushToGist();
+  updateGistDisplay();
+  const finalId = document.getElementById('sync-gist-input').value;
+  msg.textContent = syncGistId ? '✓ 同步成功！Gist ID 已自動填入，複製到其他裝置使用。' : '✗ 同步失敗，請確認 Token 是否正確。';
+});
+
+document.getElementById('sync-pull-btn').addEventListener('click', async () => {
+  const token  = document.getElementById('sync-token-input').value.trim();
+  const gistId = document.getElementById('sync-gist-input').value.trim();
+  const msg    = document.getElementById('sync-msg');
+  if (!token || !gistId) { msg.textContent = '請填入 Token 和 Gist ID'; return; }
+  syncToken = token; syncGistId = gistId;
+  msg.textContent = '拉取中...';
+  const data = await pullFromGist();
+  if (data) {
+    state = { translations: data.translations||[], essays: data.essays||[], chinese: data.chinese||[] };
+    saveData(state);
+    refreshCounts();
+    ['translations','essays','chinese'].forEach(b => renderBank(b));
+    updateGistDisplay();
+    msg.textContent = '✓ 已從雲端拉取最新資料！';
+  } else {
+    msg.textContent = '✗ 拉取失敗，請確認 Token 和 Gist ID 是否正確。';
+  }
+});
+
+// Auto-pull on startup
+(async () => {
+  if (syncToken && syncGistId) {
+    setSyncDot('syncing');
+    const data = await pullFromGist();
+    if (data) {
+      state = { translations: data.translations||[], essays: data.essays||[], chinese: data.chinese||[] };
+      saveData(state);
+      refreshCounts();
+      ['translations','essays','chinese'].forEach(b => renderBank(b));
+    }
+  } else {
+    setSyncDot('off');
+  }
+})();
 
 /* =============================================
    INITIAL RENDER
