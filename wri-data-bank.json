@@ -1,0 +1,1167 @@
+{
+  "version": "1.0",
+  "exportedAt": "2026-05-08T12:00:00.000Z",
+  "translations": [
+    {
+      "id": "id_rd7mlu4d936269",
+      "pattern": "With the rapid development of X, ...",
+      "meaning": "隨著 X 的快速發展,...",
+      "exampleZh": "隨著科技的快速發展，人類的生活方式產生了根本性的轉變。",
+      "exampleEn": "With the rapid development of technology, the way humans live has undergone a fundamental transformation.",
+      "tags": [
+        "萬用開頭",
+        "發展"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_fy5qnigh936269",
+      "pattern": "A growing number of people ...",
+      "meaning": "越來越多人...",
+      "exampleZh": "越來越多人開始重視心理健康。",
+      "exampleEn": "A growing number of people are beginning to take mental health seriously.",
+      "tags": [
+        "趨勢"
+      ],
+      "difficulty": "A",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_zk14sr2u936269",
+      "pattern": "Studies have shown that ...",
+      "meaning": "研究指出...",
+      "exampleZh": "研究指出，長期睡眠不足會顯著影響認知功能。",
+      "exampleEn": "Studies have shown that chronic sleep deprivation significantly impairs cognitive function.",
+      "tags": [
+        "引用研究",
+        "學術"
+      ],
+      "difficulty": "A",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_39h0kgbx936269",
+      "pattern": "It is worth noting that ...",
+      "meaning": "值得注意的是...",
+      "exampleZh": "值得注意的是，這項研究的樣本數相對有限。",
+      "exampleEn": "It is worth noting that the sample size of this study is relatively limited.",
+      "tags": [
+        "提醒",
+        "保留"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_kv054a8t936269",
+      "pattern": "Not only ... but also ...",
+      "meaning": "不僅...而且...",
+      "exampleZh": "這種方法不僅有效，而且成本低廉。",
+      "exampleEn": "This method is not only effective but also cost-efficient.",
+      "tags": [
+        "並列"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "in terms of",
+      "meaning": "就...而言；在...方面",
+      "exampleZh": "就處理創傷而言，我在警察工作的那些年，給了我任何教科書都無法給的東西。",
+      "exampleEn": "In terms of handling trauma, my years as a police officer gave me more than any textbook could.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "B",
+      "id": "id_jcovz1j5936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) devote oneself to",
+      "meaning": "全心投入...；致力於...",
+      "exampleZh": "離開警職後，我全心投入建立一個能真正幫助他人的知識平台。",
+      "exampleEn": "After leaving the force, I devoted myself to building a knowledge platform that could genuinely help others.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "B",
+      "id": "id_5asdj0gp936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "the more ... the more ...",
+      "meaning": "越...就越...",
+      "exampleZh": "我越誠實地審視自己的過去，就越清楚地知道自己想要什麼樣的未來。",
+      "exampleEn": "The more honestly I examined my past, the more clearly I understood what I wanted my future to look like.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "B",
+      "id": "id_downqpfh936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) tend to",
+      "meaning": "傾向於...；往往...",
+      "exampleZh": "經歷過重大困境的人，往往會培養出更深的同理心。",
+      "exampleEn": "People who have experienced significant hardship tend to develop a deeper capacity for empathy.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "A",
+      "id": "id_dl6t6hjt936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "can't help but",
+      "meaning": "忍不住...；不由得...",
+      "exampleZh": "當我遇到一個已經知道答案卻無法行動的人，我忍不住看見年輕時的自己。",
+      "exampleEn": "When I encounter someone who already knows the answer but cannot act on it, I can't help but recognize my younger self.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "B",
+      "id": "id_edbv21zb936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "no matter what",
+      "meaning": "不管怎樣；無論如何",
+      "exampleZh": "不管遭遇什麼阻礙，我都決心完成心理系的學業。",
+      "exampleEn": "No matter what obstacles arise, I am committed to completing my psychology degree.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "A",
+      "id": "id_nx87xwec936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be deprived of",
+      "meaning": "被剝奪...",
+      "exampleZh": "我在警察工作中接觸的許多人，從小就被剝奪了基本的情感安全感。",
+      "exampleEn": "Many individuals I worked with as a police officer had been deprived of basic emotional safety from an early age.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "B",
+      "id": "id_dyrqyf0n936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) have impact on",
+      "meaning": "對...產生影響",
+      "exampleZh": "我們所接收的資訊品質，對我們所做的決定品質有深遠的影響。",
+      "exampleEn": "The quality of information we consume has a profound impact on the quality of decisions we make.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "A",
+      "id": "id_vdcgp4nn936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "in charge of",
+      "meaning": "負責...；主管...",
+      "exampleZh": "擔任警察期間，我負責少年輔導與性騷擾案件調查長達五年。",
+      "exampleEn": "As a police officer, I was in charge of juvenile counseling and sexual harassment investigations for five years.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "A",
+      "id": "id_po21yw9m936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be similar to",
+      "meaning": "與...相似；類似於...",
+      "exampleZh": "在人生重大轉變後重建自信，與從身體傷害中復原相似——兩者都需要耐心和持續的努力。",
+      "exampleEn": "Rebuilding self-confidence after a major life transition is similar to recovering from a physical injury — both require patience and consistent effort.",
+      "tags": [
+        "東吳",
+        "109"
+      ],
+      "difficulty": "B",
+      "id": "id_5dr7b4lm936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "too ... to ...",
+      "meaning": "太...以至於無法...",
+      "exampleZh": "多年來，我太深陷於警察工作的日常要求中，以至於無法意識到它讓我付出了多大的代價。",
+      "exampleEn": "For years, I was too embedded in the daily demands of police work to recognize how much it was costing me.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "A",
+      "id": "id_68h5y243936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "in spite of",
+      "meaning": "儘管...；雖然...",
+      "exampleZh": "儘管離開學術界十年後才回來，我現在的動力比十八歲時更強。",
+      "exampleEn": "In spite of returning to academia after a decade away, I am more motivated now than I ever was at eighteen.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "B",
+      "id": "id_5tvsk5rz936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "Neither ... nor ...",
+      "meaning": "既不...也不...",
+      "exampleZh": "無論是正規教育還是職業成就，都無法取代真正的自我認識。",
+      "exampleEn": "Neither formal education nor professional success can substitute for genuine self-knowledge.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "B",
+      "id": "id_g8p05zvh936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "let alone",
+      "meaning": "更別說...；遑論...",
+      "exampleZh": "我離開警職時沒有積蓄，更別說有清晰的職涯規劃了。",
+      "exampleEn": "I had no savings when I left the police force, let alone a clear career plan.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "B",
+      "id": "id_l01xc3l3936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "as if",
+      "meaning": "彷彿...；好像...",
+      "exampleZh": "辭職後，我感覺彷彿五年來終於第一次真正呼了一口氣。",
+      "exampleEn": "After resigning, I felt as if I had finally exhaled for the first time in five years.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "A",
+      "id": "id_e8w7rt04936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "Needless to say, ...",
+      "meaning": "不用說...；毋庸置疑...",
+      "exampleZh": "不用說，從頭開始重建職業生涯需要勇氣和縝密的規劃。",
+      "exampleEn": "Needless to say, rebuilding a career from scratch required both courage and careful planning.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "B",
+      "id": "id_3uagf6i8936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "unless",
+      "meaning": "除非...；否則...",
+      "exampleZh": "除非我們願意審視自己對自身的假設，否則真正的改變永遠遙不可及。",
+      "exampleEn": "Unless we are willing to examine our assumptions about ourselves, real change remains out of reach.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "A",
+      "id": "id_lekxr3ss936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "What if ...?",
+      "meaning": "如果...會怎樣？；萬一...呢？",
+      "exampleZh": "如果我在正規教育體制外度過的那些年，不是浪費，而是必要的呢？",
+      "exampleEn": "What if the years I spent outside formal education were not wasted, but necessary?",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "B",
+      "id": "id_ydnlrbo5936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "whereas",
+      "meaning": "然而...；而...（對比）",
+      "exampleZh": "傳統課堂遵循固定課程，而AI輔助學習則能適應個人的學習節奏與需求。",
+      "exampleEn": "Traditional classrooms follow a fixed curriculum, whereas AI-powered learning adapts to the individual's pace and needs.",
+      "tags": [
+        "東吳",
+        "111"
+      ],
+      "difficulty": "B",
+      "id": "id_paxx7ntx936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be familiar with",
+      "meaning": "熟悉...；對...熟知",
+      "exampleZh": "透過多年的直接辦案，我熟悉了重複受害背後的心理模式。",
+      "exampleEn": "Through years of direct casework, I became familiar with the psychological patterns underlying repeated victimization.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "A",
+      "id": "id_dp6nlyn6936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be regarded as",
+      "meaning": "被視為...；被認為是...",
+      "exampleZh": "自主學習越來越被視為在快速變化的世界中最有價值的能力之一。",
+      "exampleEn": "Self-directed learning is increasingly regarded as one of the most valuable competencies in a rapidly changing world.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "A",
+      "id": "id_qj9sao37936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "either ... or ...",
+      "meaning": "不是...就是...；兩者擇一",
+      "exampleZh": "我們常常把人生關鍵選擇框定為安全感或意義感二擇一，卻很少意識到兩者可以兼得。",
+      "exampleEn": "We often frame life-defining choices as either security or meaning — rarely recognizing we might build both.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "B",
+      "id": "id_v0tb75n0936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "in contrast",
+      "meaning": "相比之下；對比而言",
+      "exampleZh": "與被動接收新聞相比，主動尋找英文學習內容讓我能夠比周遭環境超前思考數年。",
+      "exampleEn": "In contrast to passive news consumption, actively seeking English-language content allowed me to think years ahead of my immediate environment.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "B",
+      "id": "id_vp73na1z936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be aware of",
+      "meaning": "意識到...；察覺...",
+      "exampleZh": "一位好的諮詢師必須先意識到自己未解決的經歷，才能有效地支持他人。",
+      "exampleEn": "A good counselor must be aware of their own unresolved experiences before they can effectively support others.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "A",
+      "id": "id_fs2vso40936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "as a result",
+      "meaning": "因此；結果是...",
+      "exampleZh": "我持續投資自己的學習，因此建立了一套成為我工作基礎的知識體系。",
+      "exampleEn": "I invested consistently in my own learning, and as a result, built a body of knowledge that became the foundation of my work.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "A",
+      "id": "id_py9klkdh936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be responsible for",
+      "meaning": "負責...；對...負有責任",
+      "exampleZh": "擔任警察期間，我負責處理少年案件、性騷擾報案，以及社區犯罪預防計畫。",
+      "exampleEn": "As a police officer, I was responsible for managing juvenile cases, sexual harassment reports, and community crime prevention programs.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "A",
+      "id": "id_y7ydgmgw936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) provide A with B",
+      "meaning": "提供A（某人）B（某物）",
+      "exampleZh": "我的平台旨在為個人提供既有心理學根據又實際可用的自我理解框架。",
+      "exampleEn": "My platform aims to provide individuals with frameworks for understanding themselves that are both psychologically grounded and practically applicable.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "B",
+      "id": "id_k9w5a81u936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "instead of",
+      "meaning": "而不是...；取代...",
+      "exampleZh": "我選擇投資高品質的資訊，而不是消費演算法推送給我的任何內容。",
+      "exampleEn": "I chose to invest in quality information instead of consuming whatever the algorithm served me.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "A",
+      "id": "id_ek04x1vh936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be willing to",
+      "meaning": "願意...；甘願...",
+      "exampleZh": "建立有意義的職業生涯，需要願意承受一段不確定性和財務不穩定的時期。",
+      "exampleEn": "Building a meaningful career requires being willing to endure a period of uncertainty and financial instability.",
+      "tags": [
+        "東吳",
+        "112"
+      ],
+      "difficulty": "B",
+      "id": "id_7u0luojd936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "by no means",
+      "meaning": "絕不...；決非...",
+      "exampleZh": "三十一歲重回大學絕不是傳統的道路，但對我來說是正確的選擇。",
+      "exampleEn": "Returning to university at thirty-one is by no means the conventional path, but it is the right one for me.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "B",
+      "id": "id_p0oe9j2e936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "with respect to",
+      "meaning": "關於...；就...而言",
+      "exampleZh": "就台灣的心理健康支持而言，需求與現有資源之間仍存在顯著落差。",
+      "exampleEn": "With respect to mental health support in Taiwan, there remains a significant gap between need and available resources.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "B",
+      "id": "id_hoj6639b936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) count on",
+      "meaning": "依靠...；指望...",
+      "exampleZh": "當我離開穩定的工作時，我只能依靠自己的自律與判斷力引導我前進。",
+      "exampleEn": "When I left my stable job, I could only count on my own discipline and judgment to guide me forward.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "B",
+      "id": "id_ili859rt936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "due to",
+      "meaning": "由於...；因為...",
+      "exampleZh": "由於我有處理真實創傷與危機案件的經驗，我以不同品質的專注投入心理學理論。",
+      "exampleEn": "Due to my experience handling real cases involving trauma and crisis, I approach psychological theory with a different quality of attention.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "A",
+      "id": "id_im2jrtz2936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "not to mention",
+      "meaning": "更別說...；遑論...",
+      "exampleZh": "從頭重建職業生涯在財務上要求很高，更別提情緒上的消耗了。",
+      "exampleEn": "Rebuilding a career from scratch is financially demanding, not to mention emotionally exhausting.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "B",
+      "id": "id_uaadz67r936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) be supposed to",
+      "meaning": "應該...；理應...",
+      "exampleZh": "教育應該要擴展我們的思考能力，而不只是認證我們對課程的服從。",
+      "exampleEn": "Education is supposed to expand our capacity for thought — not simply certify our compliance with a curriculum.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "B",
+      "id": "id_lirsofwv936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) deal with",
+      "meaning": "處理...；應對...",
+      "exampleZh": "處理模糊性的能力，是一個人能培養的最被低估的技能之一。",
+      "exampleEn": "The ability to deal with ambiguity is one of the most undervalued skills a person can develop.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "A",
+      "id": "id_lzdt9di4936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) share ... with ...",
+      "meaning": "與...分享...",
+      "exampleZh": "我想把我透過親身經歷獲得的洞察，分享給正在面對類似十字路口的人。",
+      "exampleEn": "I want to share the insight I have gained through lived experience with people navigating similar crossroads.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "A",
+      "id": "id_0aldidzb936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) take advantage of",
+      "meaning": "善用...；充分利用...",
+      "exampleZh": "我充分利用所有可用的資源——線上課程、英文內容、直接諮詢——來建立自己的教育。",
+      "exampleEn": "I took advantage of every resource available — online courses, English-language content, direct consultation — to build my own education.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "B",
+      "id": "id_0b8fiu88936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "(to) take part in",
+      "meaning": "參加...；參與...",
+      "exampleZh": "參加這次轉學考不只是學術上的嘗試，而是新篇章正式的開始。",
+      "exampleEn": "Taking part in this transfer examination is not just an academic exercise; it is the formal beginning of a new chapter.",
+      "tags": [
+        "東吳",
+        "113",
+        "114"
+      ],
+      "difficulty": "A",
+      "id": "id_2y74pk3f936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "The hardest X is rarely between A and B. More often, it is between C and D.",
+      "meaning": "最難的X很少是A與B之間的選擇，更多時候是C與D之間的。",
+      "exampleZh": "最難的決定很少是對與錯之間的選擇，更多時候是安全與真實之間的。",
+      "exampleEn": "The hardest decisions are rarely between right and wrong. More often, they are between what is safe and what is true.",
+      "tags": [
+        "作文句型",
+        "對比",
+        "開頭"
+      ],
+      "difficulty": "C",
+      "id": "id_sdqj52t5936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "It was not A — it was the beginning of B.",
+      "meaning": "這不是A，而是B的開始。",
+      "exampleZh": "這不是失敗，而是一段任何課堂都給不了的教育的開始。",
+      "exampleEn": "It was not a failure — it was the beginning of an education no classroom could offer.",
+      "tags": [
+        "作文句型",
+        "轉折",
+        "破題"
+      ],
+      "difficulty": "C",
+      "id": "id_ttwhbxzc936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "What made X so difficult was not A. What made it hard was B.",
+      "meaning": "讓X如此困難的不是A，而是B。",
+      "exampleZh": "讓那個決定如此困難的不是不確定答案，而是承認它所需付出的代價。",
+      "exampleEn": "What made the decision so difficult was not uncertainty. What made it hard was the cost of admitting it.",
+      "tags": [
+        "作文句型",
+        "分析",
+        "轉折"
+      ],
+      "difficulty": "C",
+      "id": "id_gttoeger936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "I concluded that the greater risk was not A — it was B.",
+      "meaning": "我意識到，更大的風險不是A，而是B。",
+      "exampleZh": "我意識到，更大的風險不是離開，而是留到自己什麼都給不出去。",
+      "exampleEn": "I concluded that the greater risk was not leaving — it was staying until I had nothing left to give.",
+      "tags": [
+        "作文句型",
+        "論點",
+        "決策"
+      ],
+      "difficulty": "C",
+      "id": "id_j1im8wsk936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "The X I had brought to A did not disappear — it was always mine. What changed was B.",
+      "meaning": "我帶進A的X沒有消失，它一直屬於我。改變的是B。",
+      "exampleZh": "我帶進警察工作的自律沒有消失，它一直屬於我。改變的是方向。",
+      "exampleEn": "The discipline I had brought to police work did not disappear — it was always mine. What changed was direction.",
+      "tags": [
+        "作文句型",
+        "成長",
+        "認同"
+      ],
+      "difficulty": "C",
+      "id": "id_pd24fb07936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "The most significant benefit of X is not A — it is B.",
+      "meaning": "X最重要的優勢不是A，而是B。",
+      "exampleZh": "AI最重要的優勢不是效率，而是可及性。",
+      "exampleEn": "The most significant benefit of AI is not efficiency — it is access.",
+      "tags": [
+        "作文句型",
+        "AI",
+        "論點"
+      ],
+      "difficulty": "C",
+      "id": "id_6gx99438936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "X is most powerful not when it A, but when it B.",
+      "meaning": "X最有力量的時候不是當它A，而是當它B。",
+      "exampleZh": "AI最有力量的時候不是當它取代思考，而是當它加速思考。",
+      "exampleEn": "AI is most powerful not when it replaces thinking, but when it accelerates it.",
+      "tags": [
+        "作文句型",
+        "AI",
+        "對比"
+      ],
+      "difficulty": "C",
+      "id": "id_5dtwxfll936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "What this ultimately gave me was not A, but B.",
+      "meaning": "這最終給我的不是A，而是B。",
+      "exampleZh": "這個技能最終給我的不是資訊，而是自主能力。",
+      "exampleEn": "What this skill ultimately gave me was not information, but agency.",
+      "tags": [
+        "作文句型",
+        "結論",
+        "反轉"
+      ],
+      "difficulty": "C",
+      "id": "id_igpan5ll936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "X is not A — it is the most B I have ever C.",
+      "meaning": "X不是A，而是我做過的最B的C。",
+      "exampleZh": "重回心理系讀書不是第二次嘗試，而是我做過的最蓄意的決定。",
+      "exampleEn": "Returning to study psychology is not a second attempt — it is the most deliberate decision I have ever made.",
+      "tags": [
+        "作文句型",
+        "結論",
+        "有力"
+      ],
+      "difficulty": "C",
+      "id": "id_nvppk2g3936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "The quality of A is inseparable from the quality of B.",
+      "meaning": "A的品質與B的品質密不可分。",
+      "exampleZh": "一個人思考的品質與其資訊來源的品質密不可分。",
+      "exampleEn": "The quality of a person's thinking is inseparable from the quality of their information sources.",
+      "tags": [
+        "作文句型",
+        "論點",
+        "識讀"
+      ],
+      "difficulty": "C",
+      "id": "id_8mtb663m936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "pattern": "The most difficult X are not the ones where you do not know A. They are the ones where you know A but are not yet ready to B.",
+      "meaning": "最難的X不是你不知道A的那些，而是你知道A卻還沒準備好B的那些。",
+      "exampleZh": "最難的決定不是你不知道答案的那些，而是你知道答案卻還沒準備好行動的那些。",
+      "exampleEn": "The most difficult decisions are not the ones where you do not know the answer. They are the ones where you know the answer but are not yet ready to act on it.",
+      "tags": [
+        "作文句型",
+        "結尾",
+        "深刻"
+      ],
+      "difficulty": "C",
+      "id": "id_emhqiy4y936269",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_kmsfd5q4681945",
+      "createdAt": 1778483681944,
+      "pattern": "a gleam of X / to gleam",
+      "meaning": "微光；一絲（希望、光亮）；閃爍",
+      "exampleZh": "在最黑暗的時期，正是那一絲自我價值的微光，讓我沒有放棄前進。",
+      "exampleEn": "It was a gleam of self-worth, however faint, that kept me moving forward during the darkest period.",
+      "tags": [
+        "單字",
+        "意象",
+        "情感"
+      ],
+      "difficulty": "C"
+    },
+    {
+      "id": "id_k6cxqahp681945",
+      "createdAt": 1778483681944,
+      "pattern": "glamorize X / the glamor of X",
+      "meaning": "glamor = 魅力、光鮮；glamorize = 美化、渲染（常帶負面含意）",
+      "exampleZh": "社群媒體往往美化了成功的表象，卻掩蓋了背後真實的掙扎。",
+      "exampleEn": "Social media tends to glamorize the surface of success while obscuring the real struggle beneath it.",
+      "tags": [
+        "單字",
+        "社會議題",
+        "識讀"
+      ],
+      "difficulty": "C"
+    },
+    {
+      "id": "id_rn0r0hf2681945",
+      "createdAt": 1778483681944,
+      "pattern": "a preference for X (over Y)",
+      "meaning": "對X的偏好；偏好X勝於Y",
+      "exampleZh": "我對主動學習的偏好，讓我養成了付費取得高品質資訊的習慣。",
+      "exampleEn": "My preference for active learning led me to develop the habit of paying for quality information.",
+      "tags": [
+        "片語",
+        "句型",
+        "學習"
+      ],
+      "difficulty": "B"
+    },
+    {
+      "id": "id_5726dtbx681945",
+      "createdAt": 1778483681944,
+      "pattern": "sympathy for / sympathize with",
+      "meaning": "同情（旁觀者的關心）⚠️ 不等於 empathy（同理，感同身受）",
+      "exampleZh": "真正的助人不是來自同情，而是來自能真正理解對方處境的同理心。",
+      "exampleEn": "Genuine support comes not from sympathy, but from empathy — the ability to truly understand another's position.",
+      "tags": [
+        "單字",
+        "心理",
+        "區辨"
+      ],
+      "difficulty": "B"
+    },
+    {
+      "id": "id_jujqmuf3681945",
+      "createdAt": 1778483681944,
+      "pattern": "bask in X",
+      "meaning": "沉浸於；陶醉於；享受（正面的事物：陽光、掌聲、成就）",
+      "exampleZh": "離開警職後，我終於能夠沉浸在真正與自己契合的工作中。",
+      "exampleEn": "After leaving the force, I was finally able to bask in work that genuinely aligned with who I was.",
+      "tags": [
+        "單字",
+        "動詞",
+        "情感"
+      ],
+      "difficulty": "C"
+    },
+    {
+      "id": "id_9e1mbw5q681945",
+      "createdAt": 1778483681944,
+      "pattern": "dissipate / dissipated（拼法：兩個s，一個p）",
+      "meaning": "消散；耗盡；dissipated = 精力耗盡的 / 放蕩的",
+      "exampleZh": "長年在不契合的工作中消耗精力，讓我的生命力逐漸消散。",
+      "exampleEn": "Years of spending my energy on misaligned work left me dissipated and directionless.",
+      "tags": [
+        "單字",
+        "動詞",
+        "情感"
+      ],
+      "difficulty": "C"
+    },
+    {
+      "id": "id_kmhobsmu681945",
+      "createdAt": 1778483681944,
+      "pattern": "envisage / envision / conceive of / fantasize（想像類動詞群）",
+      "meaning": "envisage/envision = 設想、預見（理性）｜conceive of = 構想（認知）｜fantasize = 幻想（帶渴望/逃避）",
+      "exampleZh": "我很難想像一個沒有AI輔助的備考過程。",
+      "exampleEn": "I find it difficult to envisage a preparation process without the support of AI-assisted learning.",
+      "tags": [
+        "單字",
+        "動詞群",
+        "想像",
+        "作文"
+      ],
+      "difficulty": "C"
+    },
+    {
+      "id": "id_if9mf2kk681945",
+      "createdAt": 1778483681944,
+      "pattern": "immersion in X / full immersion / immersive",
+      "meaning": "沉浸；完全投入；immersive = 沉浸式的",
+      "exampleZh": "語言學習最有效的方式，是完全沉浸在目標語言無所不在的環境中。",
+      "exampleEn": "The most effective approach to language learning is full immersion in an environment where the target language is inescapable.",
+      "tags": [
+        "單字",
+        "學習",
+        "AI"
+      ],
+      "difficulty": "B"
+    },
+    {
+      "id": "id_dbvi7eob681945",
+      "createdAt": 1778483681944,
+      "pattern": "perplex / baffle / bewilder / obfuscate（困惑類動詞群）",
+      "meaning": "perplex = 困惑｜baffle = 完全搞不懂（更強）｜bewilder = 不知所措｜obfuscate = 故意混淆（唯一有主動意圖）",
+      "exampleZh": "AI生成內容有時故意模糊來源，讓讀者不知道該相信什麼。",
+      "exampleEn": "AI-generated content can sometimes obfuscate its sources, leaving readers bewildered about what to trust.",
+      "tags": [
+        "單字",
+        "動詞群",
+        "識讀",
+        "AI"
+      ],
+      "difficulty": "C"
+    },
+    {
+      "id": "id_gokp5akf681945",
+      "createdAt": 1778483681944,
+      "pattern": "distinguish X from Y / what distinguishes X from Y is ...",
+      "meaning": "區分X與Y；辨別；「讓X不同於Y的是...」",
+      "exampleZh": "真正區分優秀心理師與普通心理師的，不是知識量，而是在場的能力。",
+      "exampleEn": "What distinguishes an exceptional psychologist from a merely competent one is not the breadth of knowledge, but the quality of presence.",
+      "tags": [
+        "片語",
+        "句型",
+        "對比",
+        "論述"
+      ],
+      "difficulty": "B"
+    }
+  ],
+  "essays": [
+    {
+      "id": "id_jvmd80bh936269",
+      "type": "opening",
+      "content": "In recent years, X has become a topic of heated debate, with opinions sharply divided over its true impact on Y.",
+      "usage": "爭議型開頭 — 適合討論社會議題、科技倫理。",
+      "example": "",
+      "tags": [
+        "爭議",
+        "現象"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_4o5llnr0936269",
+      "type": "body",
+      "content": "A case in point is X. / This is best illustrated by ...",
+      "usage": "舉例段落起手 — 接具體例子。",
+      "example": "A case in point is the rise of remote work during the pandemic, which fundamentally reshaped how organizations operate.",
+      "tags": [
+        "舉例"
+      ],
+      "difficulty": "A",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_1zu47gty936269",
+      "type": "transition",
+      "content": "Admittedly, X. However, this view overlooks Y.",
+      "usage": "讓步轉折 — 先承認對方再反駁，顯得有層次。",
+      "example": "",
+      "tags": [
+        "讓步",
+        "反駁"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_4y6hhuoi936269",
+      "type": "conclusion",
+      "content": "Given the points discussed above, it becomes clear that X. Looking ahead, ...",
+      "usage": "收尾+展望 — 不要只總結，加一句展望會比較有力量。",
+      "example": "",
+      "tags": [
+        "結尾",
+        "展望"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_5nekebd0936269",
+      "type": "opening",
+      "content": "The conversation about [issue] often begins in the wrong place.",
+      "usage": "社會議題反直覺開頭 — 先質疑討論起點，製造張力，適合少子化、AI、種族等議題。",
+      "example": "The conversation about declining birth rates often begins in the wrong place.",
+      "tags": [
+        "社會議題",
+        "開頭",
+        "反直覺"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_9z1gquwj936269",
+      "type": "body",
+      "content": "It is tempting to frame [issue] as simply a matter of [X], but the reality is more layered.",
+      "usage": "承認問題複雜性 — 避免過度簡化，顯示思辨深度。",
+      "example": "It is tempting to frame the AI debate as simply a matter of efficiency, but the reality is more layered.",
+      "tags": [
+        "社會議題",
+        "分析",
+        "複雜性"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_7t7781c3936269",
+      "type": "transition",
+      "content": "Those who argue [counterposition] are not wrong to raise concerns, but they miss the more fundamental point that ...",
+      "usage": "承認對立面但不讓步 — 比直接反駁更有說服力，適合論說文中段。",
+      "example": "",
+      "tags": [
+        "社會議題",
+        "轉折",
+        "反駁"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_gm0puo7e936269",
+      "type": "conclusion",
+      "content": "The path forward requires not just [policy/action], but a shift in how we understand [X] in the first place.",
+      "usage": "社會議題結尾 — 從具體建議升華到思維框架的改變。",
+      "example": "The path forward requires not just better policy, but a shift in how we understand individual agency in the first place.",
+      "tags": [
+        "社會議題",
+        "結尾",
+        "升華"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    }
+  ],
+  "chinese": [
+    {
+      "id": "id_7vcoh90m936269",
+      "type": "破題",
+      "content": "「__引言__」，__作者__如是說。__接續闡釋，點出文章主旨__",
+      "source": "引名言型模板",
+      "usage": "適用大部分論說題，引用要扣題，避免硬套。",
+      "tags": [
+        "模板",
+        "引言型"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_gy3w1iek936269",
+      "type": "切角",
+      "content": "知識的價值，不在於習得的當下，而在於它能否在真實的人與事面前繼續成立。我曾以為大學所學是一種裝備；出社會後才明白，它更像一張地圖——有用，但地圖本身從來不等於地形。",
+      "source": "台大切角一：知識在真實處境中的侷限與轉化",
+      "usage": "適用：讀大學意義、博雅教育、論述能力、語文素養。素材：理論知識vs.警察實務的落差。",
+      "tags": [
+        "台大",
+        "切角",
+        "知識",
+        "教育"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_9v9mq6ye936269",
+      "type": "切角",
+      "content": "體制的存在是為了處理共性，但人的困境從來是個別的。五年的實務工作讓我理解一件事：真正的判斷力，是在標準程序給出答案之後，還能繼續問「這個答案適用於眼前這個人嗎」的能力。",
+      "source": "台大切角二：標準之外的真實——體制與個體的張力",
+      "usage": "適用：標準答案、論述能力、公民素養、博雅教育。素材：警察辦案標準程序vs.個案的人性複雜。",
+      "tags": [
+        "台大",
+        "切角",
+        "標準",
+        "論述"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_wjswyk2v936269",
+      "type": "切角",
+      "content": "我對「素養」二字的理解，不是從課堂裡來的。是從一次次用文字陪著陌生人度過至暗時刻，從那些在對話裡慢慢找回自己的人身上，逐漸明白——真正的素養，是一種把知識還給人的能力。",
+      "source": "台大切角三：素養不是習得的，是活出來的",
+      "usage": "適用：語文素養、人文素養、博雅教育、讀大學意義。素材：自媒體用文字陪伴人的經歷。",
+      "tags": [
+        "台大",
+        "切角",
+        "素養",
+        "人文"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_d9g9pker936269",
+      "type": "切角",
+      "content": "在資訊泛濫的時代，能讀懂一篇文章固然重要，但更根本的問題是：我們有沒有能力判斷值得讀的是哪一篇？識讀能力的核心，從來不是速度，而是辨別力——知道什麼值得進入自己的腦袋，什麼應該被擋在門外。",
+      "source": "台大切角四：識讀是當代人的生存基本功",
+      "usage": "適用：語文素養與識讀能力、公民素養、AI人文。素材：英文圈知識超前10年、演算法vs主動學習。",
+      "tags": [
+        "台大",
+        "切角",
+        "識讀",
+        "AI"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_q5ytw74c936269",
+      "type": "破題",
+      "content": "「＿＿＿」這個詞，我們以為自己懂，直到某一天在真實的處境裡被它考驗，才發現懂得有多淺。",
+      "source": "台大開頭模板：破題型",
+      "usage": "適用大部分論說題，先定義再反轉，製造讀者好奇心。",
+      "tags": [
+        "台大",
+        "開頭",
+        "破題"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_u3zettf2936269",
+      "type": "破題",
+      "content": "如果一個人讀了二十年的書、考了無數次試，卻從未真正思考過「為什麼」，這算不算一種素養的失敗？",
+      "source": "台大開頭模板：反問型",
+      "usage": "製造張力，挑戰既有假設，適合論說文第一段。",
+      "tags": [
+        "台大",
+        "開頭",
+        "反問"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_yvvq1t2a936269",
+      "type": "結語",
+      "content": "＿＿＿的意義，或許不在於它給了我們什麼答案，而在於它讓我們有能力繼續追問。",
+      "source": "台大結尾模板：升華型",
+      "usage": "不給結論給方向，留白感強，台大風格。",
+      "tags": [
+        "台大",
+        "結尾",
+        "升華"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_sh68yq6w936269",
+      "type": "結語",
+      "content": "真正的＿＿＿，是一種在喧囂裡仍能聽見自己的能力。",
+      "source": "台大結尾模板：留白型",
+      "usage": "給讀者一句帶走的話，簡潔有力。",
+      "tags": [
+        "台大",
+        "結尾",
+        "留白"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_12zzi7vi936269",
+      "type": "切角",
+      "content": "我記得遞出辭呈那天，窗外是很普通的下午，陽光落在走廊地板上，什麼都沒有改變，卻又什麼都不一樣了。那是我第一次體會到，某些決定的重量，不在做決定的瞬間，而在走出門後的第一步。",
+      "source": "政大切角一：那個當下，我才真正理解了",
+      "usage": "政大散文類題目，以具體場景開門。先讓細節說話，道理最後才出現。",
+      "tags": [
+        "政大",
+        "散文",
+        "場景",
+        "決定"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_3z497q65936269",
+      "type": "切角",
+      "content": "我對美的認識，不是從美術館開始的。是從某個深夜，一個人坐在房間裡，突然覺得窗外路燈的光落得很好，那種好讓我哭了出來——不是因為悲傷，是因為那一刻我知道自己還活著。",
+      "source": "政大切角二：美，是在最意外的地方找到的",
+      "usage": "政大藝術體驗類題目，或任何關於「美」的主題。走生命感受路線，不走美術館路線。",
+      "tags": [
+        "政大",
+        "散文",
+        "美",
+        "藝術"
+      ],
+      "difficulty": "C",
+      "createdAt": 1778209936269
+    },
+    {
+      "id": "id_u87c7xlq936269",
+      "type": "破題",
+      "content": "【政大散文技法提醒】順序：具體場景→情感反應→一句普遍道理。與台大相反：台大先說道理，政大先給場景。道理只說一句，放最後。",
+      "source": "政大vs台大寫法差異",
+      "usage": "寫政大作文前必看。不要先講道理，先給一個你真實感受過的場景。",
+      "tags": [
+        "政大",
+        "技法",
+        "提醒"
+      ],
+      "difficulty": "B",
+      "createdAt": 1778209936269
+    }
+  ]
+}
